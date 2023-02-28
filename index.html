@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Imanol Martinez</a>
+        </div>
+        <nav id="nav" class="responsive">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+            <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive"  onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <section id="inicio" class="inicio">
+      <div class="contenedor-banner">
+        <div class="contenedor-img">
+          <img src="img/Perfil.png" alt="">
+        </div>
+        <h1>IMANOL MARTINEZ</h1>
+        <h2>Estudiante de programacion</h2>
+        <div class="redes">
+          <a href="https://www.facebook.com/imanol.martinez.5245961" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/imaa.martinez96/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.link/04mdha" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/in/imanol-martinez-51919a213/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/ImaMartinez" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobremi" class="sobremi">
+      <div class="contendedor-seccion">
+        <h2>Sobre Mi</h2>
+        <p><span>Hola, mi nombre es Imanol Martinez.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="fila">
+
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                24-09-1996
+              </li>
+
+              <li>
+                <strong>Telefono</strong>
+                3492 15602941
+              </li>
+
+              <li>
+                <strong>Provincia</strong>
+                Cordoba
+              </li>
+
+              <li>
+                <strong>Localidad</strong>
+                Morteros
+              </li>
+
+              <li>
+                <strong>Direccion</strong>
+                General Paz - 74
+              </li>
+
+              <li>
+                <strong>Email</strong>
+                imanolmartinez249@gmail.com
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-laptop"></i>
+                <span>COMPUTADORA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-book"></i>
+                <span>LIBROS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>AUTOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-microchip"></i>
+                <span>TECNOLOGIA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="botonCV">
+          Descargar CV <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Habilidades</h2>
+        <div class="fila">
+
+          <div class="col">
+            <h3>Aptitudes tecnicas</h3>
+            <div class="skill">
+              <span>Python</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>HTML y CSS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>40%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>40%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Word y Powerpoint</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Excel</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Reparacion de computadoras</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col">
+            <h3>Aptitudes profesionales</h3>
+            <div class="skill">
+              <span>Comunicacion</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicacion</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Compañerismo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Pensamiento critico</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educacion</h3>
+            <div class="item izq">
+              <h4>Tec en desarrollo de software</h4>
+              <span class="casa">Instituto superior del profesorado Nº2 Joaquin V. Gonzalez</span>
+              <span class="fecha">2022-Actual</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+
+            <div class="item izq">
+              <h4>Bootcamp tester QA Manual</h4>
+              <span class="casa">Telecom - Digitalers</span>
+              <span class="fecha">2022-2022</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+
+            <div class="item izq">
+              <h4>Curso de desarrollo de software en Python</h4>
+              <span class="casa">Academia MasterMind</span>
+              <span class="fecha">2022</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia laboral</h3>
+            <div class="item der">
+              <h4>Atención al cliente y mantenimiento técnico</h4>
+              <span class="casa">Playroom Bar</span>
+              <span class="fecha">2017-2019</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+
+            <div class="item der">
+              <h4>Servicio técnico particular</h4>
+              <span class="casa">IM Soluciones</span>
+              <span class="fecha">2019-Actual</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+
+            <div class="item der">
+              <h4>Lecturista de litoral gas</h4>
+              <span class="casa">Redes y Servicios</span>
+              <span class="fecha">2021-2022</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="img/img (1).jpg" alt="">
+            <div class="overlay">
+              <h3>Diseño creativo</h3>
+              <p>Fotografia</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="img/img (2).jpg" alt="">
+            <div class="overlay">
+              <h3>Diseño creativo</h3>
+              <p>Fotografia</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="img/img (3).jpg" alt="">
+            <div class="overlay">
+              <h3>Diseño creativo</h3>
+              <p>Fotografia</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="img/img (4).jpg" alt="">
+            <div class="overlay">
+              <h3>Diseño creativo</h3>
+              <p>Fotografia</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="img/img (7).jpg" alt="">
+            <div class="overlay">
+              <h3>Diseño creativo</h3>
+              <p>Fotografia</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="img/img (6).jpg" alt="">
+            <div class="overlay">
+              <h3>Diseño creativo</h3>
+              <p>Fotografia</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+
+          <div class="col">
+            <input type="text", placeholder="Tu Nombre">
+            <input type="text", placeholder="Numero telefonico">
+            <input type="text", placeholder="Direcicon de correo">
+            <input type="text", placeholder="Tema">
+            <textarea name="" id="" cols="30" rows="10", placeholder="Mensaje"></textarea>
+            <button>
+              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
+
+          <div class="col">
+            <img src="img/Ubicacion.png" alt="">
+            <dev class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Gral Paz 75, Morteros - Cordoba
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Telefono: 3492 15602941
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: imanolmartinez249@gmail.com
+                </li>
+              </ul>
+            </dev>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <a href="#inicio", class="arriba">
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
+      <div class="redes">
+        <a href="https://www.facebook.com/imanol.martinez.5245961" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/imaa.martinez96/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.link/04mdha" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/imanol-martinez-51919a213/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:imanolmartinez249gmail.com?Subject=Consulta"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
